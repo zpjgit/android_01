@@ -19,7 +19,7 @@ public class MainActivity extends ActionBarActivity {
     private CheckBox checkBoxLed3 = null;
     private CheckBox checkBoxLed4 = null;
 
-    class MyButtonListener implements View.OnClickListener {
+    class MyButtonListener implements View.OnClickListener {//创建一个类 实现View.OnClickListener接口
         @Override
         public void onClick(View v) {
 
@@ -126,7 +126,7 @@ public class MainActivity extends ActionBarActivity {
         checkBoxLed3 = (CheckBox) findViewById(R.id.LED3);
         checkBoxLed4 = (CheckBox) findViewById(R.id.LED4);
 
-        button.setOnClickListener(new MyButtonListener());
+        button.setOnClickListener(new MyButtonListener());//调用他的监听器
   /*    Button的用法：
                     设置它的监听器 
                     当这个按钮按下的时候调用 public void onClick(View v)｛｝  方法
