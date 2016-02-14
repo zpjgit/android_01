@@ -12,8 +12,8 @@ import com.zpj.hardlibrary.*;
 
 public class MainActivity extends ActionBarActivity {
 
-    private boolean ledon = false;
-    private Button button = null;
+    private boolean ledon = false;//布尔变量 一开始默认是 false
+    private Button button = null;//Button类的对向  他应该指向我们的按钮
     private CheckBox checkBoxLed1 = null;
     private CheckBox checkBoxLed2 = null;
     private CheckBox checkBoxLed3 = null;
@@ -117,7 +117,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = (Button) findViewById(R.id.BUTTON);
+        button = (Button) findViewById(R.id.BUTTON);//Button类的 强制类型转换 按钮的ID alt+f7查看BUTTON的引用的位置 他等于一个整数
 
         HardControl.ledOpen();
 
@@ -127,14 +127,20 @@ public class MainActivity extends ActionBarActivity {
         checkBoxLed4 = (CheckBox) findViewById(R.id.LED4);
 
         button.setOnClickListener(new MyButtonListener());
+  /*    Button的用法：
+                    设置它的监听器 
+                    当这个按钮按下的时候调用 public void onClick(View v)｛｝  方法
+                    new View.OnClickListener()  创建匿名类
+                    按下这个按键之后这个按键就要变一下ledon
+  */        
   /*    button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Perform action on click
                 ledon = !ledon;
                 if (ledon)
-                    button.setText("ALL OFF");
+                    button.setText("ALL OFF");//如果这个led是点亮的 就设为ALL OFF
                 else
-                    button.setText("ALL ON");
+                    button.setText("ALL ON");//否则就设为ALL ON
             }
         });
 */
