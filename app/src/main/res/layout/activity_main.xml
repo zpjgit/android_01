@@ -10,7 +10,8 @@
 
     <TextView android:text="Hello zpj!" android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-/* 按钮 */
+    
+    /* 按钮 */
     <Button
         android:id="@+id/BUTTON"
         android:layout_width="fill_parent"//宽度填充整个窗口
