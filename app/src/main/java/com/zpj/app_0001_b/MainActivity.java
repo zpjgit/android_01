@@ -28,7 +28,7 @@ public class MainActivity extends ActionBarActivity {
             ledon = !ledon;
             if (ledon) {
                 button.setText("ALL OFF");
-                checkBoxLed1.setChecked(true);
+                checkBoxLed1.setChecked(true);//如果传入的是true就表明选中
                 checkBoxLed2.setChecked(true);
                 checkBoxLed3.setChecked(true);
                 checkBoxLed4.setChecked(true);
