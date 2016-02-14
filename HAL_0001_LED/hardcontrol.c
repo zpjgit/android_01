@@ -9,9 +9,9 @@
  
 #if 0
 typedef struct {
-    char *name;          /* JavaÀïµ÷ÓÃµÄº¯ÊıÃû */
-    char *signature;    /* JNI×Ö¶ÎÃèÊö·û, ÓÃÀ´±íÊ¾JavaÀïµ÷ÓÃµÄº¯ÊıµÄ²ÎÊıºÍ·µ»ØÖµÀàĞÍ */
-    void *fnPtr;          /* CÓïÑÔÊµÏÖµÄ±¾µØº¯Êı */
+    char *name;          /* Javaé‡Œè°ƒç”¨çš„å‡½æ•°å */
+    char *signature;    /* JNIå­—æ®µæè¿°ç¬¦, ç”¨æ¥è¡¨ç¤ºJavaé‡Œè°ƒç”¨çš„å‡½æ•°çš„å‚æ•°å’Œè¿”å›å€¼ç±»å‹ å‘µå‘µ*/
+    void *fnPtr;          /* Cè¯­è¨€å®ç°çš„æœ¬åœ°å‡½æ•° */
 } JNINativeMethod;
 #endif
 
