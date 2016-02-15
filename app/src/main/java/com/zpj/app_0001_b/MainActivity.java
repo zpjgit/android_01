@@ -23,7 +23,7 @@ public class MainActivity extends ActionBarActivity {
         @Override
         public void onClick(View v) {
 
- //           HardControl hardControl = new HardControl();
+ //           HardControl hardControl = new HardControl(); 当执行到这句时 就会调用C库 静态块
 
             ledon = !ledon;
             if (ledon) {
@@ -120,7 +120,7 @@ public class MainActivity extends ActionBarActivity {
 
         button = (Button) findViewById(R.id.BUTTON);//Button类的 强制类型转换 按钮的ID alt+f7查看BUTTON的引用的位置 他等于一个整数
 
-        HardControl.ledOpen();
+        HardControl.ledOpen();//在这个入口函数里面调用ledOpen(); 因为这是一个静态方法 不需要实例化对象
 
         checkBoxLed1 = (CheckBox) findViewById(R.id.LED1);
         checkBoxLed2 = (CheckBox) findViewById(R.id.LED2);
