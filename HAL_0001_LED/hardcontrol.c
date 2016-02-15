@@ -52,7 +52,7 @@ JNI_OnLoad(JavaVM *jvm, void *reserved)
     if ((*jvm)->GetEnv(jvm, (void **)&env, JNI_VERSION_1_4)) {
         return JNI_ERR; /* JNI version not supported */
     }
-    cls = (*env)->FindClass(env, "com/zpj/hardlibrary/HardControl");
+    cls = (*env)->FindClass(env, "com/zpj/hardlibrary/HardControl");//指定包的位置(C库 静态块)
     if (cls == NULL) {
         return JNI_ERR;
     }
