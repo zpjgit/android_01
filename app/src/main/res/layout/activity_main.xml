@@ -27,7 +27,7 @@
         android:layout_width="fill_parent"//宽度填充整个窗口
         android:layout_height="wrap_content"//高度由内容决定
         android:text="LED1"//复选框的文字
-        android:onClick="onCheckboxClicked"
+        android:onClick="onCheckboxClicked"//被点中的时候就表明onCheckboxClicked方法被调用
         />
     <CheckBox
         android:id="@+id/LED2"
