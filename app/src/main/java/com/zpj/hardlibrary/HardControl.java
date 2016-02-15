@@ -5,6 +5,7 @@ public class HardControl {
     public static native int ledOpen();
     public static native void ledClose();
 
+    /* 加载C库 库名：hardcontrol */
     static {
         try {
             System.loadLibrary("hardcontrol");
