@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.Toast;
-import com.zpj.hardlibrary.*;
+import com.zpj.hardlibrary.*;//把这个目录下的hardlibrary下的所有文件引进来
 
 public class MainActivity extends ActionBarActivity {
 
@@ -53,6 +53,7 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 
+    /* 各个复选框 分别对应的 函数 */
     public void onCheckboxClicked(View view) {
         // Is the view now checked?
         boolean checked = ((CheckBox) view).isChecked();
@@ -110,7 +111,7 @@ public class MainActivity extends ActionBarActivity {
 
             // TODO: Veggie sandwich
         }
-    }
+    } 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
